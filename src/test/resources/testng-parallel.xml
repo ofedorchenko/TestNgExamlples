@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PARALLEL-TEST" verbose="1" configfailurepolicy="continue" preserve-order="true">
+    <test name="ParallelTest" parallel="classes" thread-count="2">
+        <packages>
+            <package name="parallel.*" />
+        </packages>
+    </test>
+</suite>

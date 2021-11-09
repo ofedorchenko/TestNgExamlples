@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="FIREFOX-TEST" verbose="1" configfailurepolicy="continue" preserve-order="true">
+
+
+    <test name="FirefoxTest" parallel="classes" thread-count="1">
+        <groups>
+            <run>
+                <include name="firefox" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="groups.before.after.*" />
+        </packages>
+    </test>
+</suite>

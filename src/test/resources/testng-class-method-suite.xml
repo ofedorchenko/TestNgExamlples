@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CLASS-METHOD-SUITE-TEST" verbose="1" configfailurepolicy="continue" preserve-order="true">
+
+    <test name="ClassMethodTest" parallel="classes" thread-count="1">
+        <classes>
+            <class name = "suite.FirstClassTest" />
+            <class name="suite.SecondClassTest">
+                <methods>
+                    <include name="testMethodFour" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
