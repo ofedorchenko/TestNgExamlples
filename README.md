@@ -1,2 +1,3 @@
-# TestNgExamlples
-Contains examples of applying parameters TestNG
+Для запуска некоторых тестовых методов на WebDriver необходимо скачать, распаковать архив и разместить в корень диска "С:\\":
+  - geckodriver.exe
+  - chromedriver.exe
