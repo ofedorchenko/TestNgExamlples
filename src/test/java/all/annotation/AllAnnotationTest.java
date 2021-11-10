@@ -3,6 +3,10 @@ package all.annotation;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+/**
+ * TODO
+ * Для того, чтобы отработали аннотации beforeGroups и afterGroups нужно запустить выполнение фалом testng-all.xml
+ */
 public class AllAnnotationTest {
 
     @Test(groups="group1")
