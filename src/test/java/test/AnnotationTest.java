@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class AnnotationTest {
 
     /**
-     * Простой метод аннотации @Test
+     * Простой метод аннотации @Test.
      */
     @Test
     public void annotationTest() {
