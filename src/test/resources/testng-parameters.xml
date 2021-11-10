@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PARAMETERS-TEST" verbose="1" configfailurepolicy="continue" preserve-order="true">
+
+
+    <test name="ParametersTest" parallel="classes" thread-count="1">
+
+        <parameter name="username"  value="usernama@gmail.com" />
+        <parameter name="password"  value="XXXXX" />
+
+        <packages>
+            <package name="parameters.*" />
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ALL-ANNOTATION-TEST" verbose="1" configfailurepolicy="continue" preserve-order="true">
+
+    <!-- Запуск группы тестов №1 -->
+    <test name="GroupOneTest" parallel="classes" thread-count="1">
+        <groups>
+            <run>
+                <include name="group1" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="all.annotation.*" />
+        </packages>
+    </test>
+
+    <!--З апуск группы тестов №2 -->
+    <test name="GroupTwoTest" parallel="classes" thread-count="1">
+        <groups>
+            <run>
+                <include name="group2" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="all.annotation.*" />
+        </packages>
+    </test>
+
+    <!-- Запуск тестов не помеченных группой -->
+    <test name="WithoutGroupTest" parallel="classes" thread-count="1">
+        <groups>
+            <run>
+                <exclude name="group1" />
+                <exclude name="group2" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="all.annotation.*" />
+        </packages>
+    </test>
+</suite>

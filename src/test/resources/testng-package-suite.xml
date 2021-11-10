@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PACKAGE-SUITE-TEST" verbose="1" configfailurepolicy="continue" preserve-order="true">
+
+
+    <test name="PackageSuiteTest" parallel="classes" thread-count="1">
+        <packages>
+            <package name="suite.*" />
+        </packages>
+    </test>
+</suite>
